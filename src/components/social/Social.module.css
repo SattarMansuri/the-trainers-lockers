@@ -1,0 +1,113 @@
+.social {
+  height: 80vh;
+  padding: 2vh 5vw 10vh 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  background-image: url('../../assets/Social Media.png');
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.right {
+  width: 50%;
+  padding: 15vh 10vw;
+  overflow: hidden;
+}
+
+.right h1 {
+  color: #DF3F44;
+  margin-bottom: 3vh;
+  font-size: 2vw;
+}
+
+.right p {
+  font-family: montserrat;
+  margin-bottom: 3vh;
+}
+
+.right input {
+  height: 15%;
+  width: 100%;
+  border-radius: 1rem;
+  border: 0.54px solid #000000;
+  padding-left: 2vw;
+  font-size: 1.1vw;
+}
+
+.right button {
+  background-color: #DF3F44;
+  color: #fff;
+  height: 15%;
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.1vw;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5vw;
+  cursor: pointer;
+}
+
+.right button:hover {
+  border: 2px solid #DF3F44;
+  background-color: #fff;
+  color: #DF3F44;
+  transition: .5s ease-in-out;
+}
+
+.socialHandles {
+  margin-top: 5vh;
+  display: flex;
+  font-size: 2vw;
+  gap: 3vw;
+}
+
+.socialHandles :only-child {
+  cursor: pointer;
+}
+
+@media (width <=550px) {
+  .social {
+    flex-direction: column;
+    height: 110vh;
+  }
+
+  .right {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .left {
+    width: 100%;
+    min-height: 50vh;
+  }
+
+  .right h1 {
+    font-size: 4vw;
+  }
+
+  .right p {
+    font-size: 2vw;
+  }
+
+  .right input {
+    height: 20%;
+    font-size: 2vw;
+  }
+
+  .right button {
+    font-size: 2vw;
+  }
+
+  .socialHandles {
+    font-size: 5vw;
+    gap: 5vw;
+  }
+}

@@ -1,0 +1,69 @@
+.performance {
+  height: 80vh;
+  background-image: url('../../assets/drug.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-block: 5vh;
+  padding: 20vh 5vw;
+  color: #fff;
+  overflow: hidden;
+}
+
+.performance h1 {
+  font-size: 2vw;
+}
+
+.performance p {
+  margin-block: 2vh;
+  font-size: 1.2vw;
+}
+
+.performance button {
+  height: 5vh;
+  width: 15vw;
+  border: none;
+  border-radius: 1rem;
+  background-color: #DF3F44;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.performance button:hover {
+  border: 2px solid #DF3F44;
+  background-color: #fff;
+  color: #DF3F44;
+  transition: .5s ease-in-out;
+}
+
+@media (width <=950px) {
+  .performance h1 {
+    font-size: 3vw;
+  }
+
+  .performance p {
+    font-size: 1.7vw;
+  }
+
+  .performance button {
+    width: 25vw;
+  }
+}
+
+@media (width <=550px) {
+  .performance h1 {
+    font-size: 4vw;
+  }
+
+  .performance p {
+    font-size: 2.3vw;
+  }
+
+  .performance button {
+    width: 35vw;
+  }
+}

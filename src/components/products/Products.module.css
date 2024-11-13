@@ -1,0 +1,17 @@
+.main {
+  height: 85vh;
+  padding-inline: 5vw;
+}
+
+.main p {
+  margin-top: 1vh;
+  font-family: montserrat;
+}
+
+.productsList {
+  margin-top: 3vh;
+  display: flex;
+  gap: 3vw;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}

@@ -1,0 +1,36 @@
+.trust {
+  min-height: 80vh;
+  padding-inline: 5vw;
+  margin-top: 5vh;
+}
+
+.trust h1 {
+  font-size: 2vw;
+}
+
+.trust p {
+  font-family: montserrat;
+  margin-block: 3vh;
+  color: #414142;
+  font-size: 1.2vw;
+}
+
+.reviews {
+  display: flex;
+  gap: 7vw;
+}
+
+@media (width <=550px) {
+  .trust h1 {
+    font-size: 4vw;
+  }
+
+  .trust p {
+    font-size: 2vw;
+  }
+
+  .reviews {
+    flex-direction: column;
+    margin-left: 20vw;
+  }
+}

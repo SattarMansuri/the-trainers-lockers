@@ -1,0 +1,61 @@
+.support {
+  min-height: 85vh;
+  padding-inline: 5vw;
+}
+
+.support h1 {
+  font-size: 2vw
+}
+
+.support p {
+  font-family: montserrat;
+  margin-top: 1vh;
+}
+
+.main {
+  display: flex;
+  margin-top: 3vh;
+  justify-content: space-between;
+}
+
+.left {
+  height: 65vh;
+  width: 20%;
+}
+
+.right {
+  height: 65vh;
+  width: 75%;
+}
+
+.right img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (width <=950px) {
+  .left {
+    width: 35%;
+  }
+
+  .right {
+    width: 62%;
+    height: 57vh;
+  }
+}
+
+@media (width <=550px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left {
+    margin-left: 20vw;
+  }
+
+  .right {
+    width: 100%;
+    overflow: hidden;
+  }
+}

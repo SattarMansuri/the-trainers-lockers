@@ -1,0 +1,90 @@
+.main {
+  min-height: 60vh;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 4vw;
+  color: #fff;
+}
+
+.main span {
+  font-family: montserrat;
+  font-size: 1.2vw;
+}
+
+.left {
+  width: 40%;
+}
+
+.left img {
+  width: 70%;
+}
+
+.main a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.trust {
+  display: flex;
+  height: 80%;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.contacts {
+  display: flex;
+  gap: 5vw;
+  margin-top: 10vh;
+  margin-bottom: 8vh;
+}
+
+.contacts div {
+  display: flex;
+  flex-direction: column;
+  gap: 3.3vh;
+}
+
+.contacts :nth-of-type(1) span {
+  cursor: pointer;
+}
+
+.contacts :nth-of-type(1) span:hover {
+  text-decoration: underline;
+}
+
+.contacts :nth-of-type(2) {
+  gap: 5vh;
+}
+
+.contacts :nth-of-type(2) span {
+  display: flex;
+  align-items: center;
+}
+
+.contacts :nth-of-type(2) span :nth-child(1) {
+  font-size: 1.5vw;
+  margin-right: 1vw;
+}
+
+@media (width <=550px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .main span {
+    font-size: 3vw;
+  }
+
+  .contacts :nth-of-type(2) span :nth-child(1) {
+    font-size: 3vw;
+  }
+
+  .contacts {
+    margin-left: 5vw;
+  }
+}

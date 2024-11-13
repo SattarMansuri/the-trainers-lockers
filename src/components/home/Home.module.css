@@ -1,0 +1,159 @@
+.main {
+  max-height: 100vh;
+  max-width: 100vw;
+  color: #fff;
+}
+
+.main img {
+  height: 95vh;
+  width: 100%;
+  position: relative;
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  background-color: #DF3F44;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: montserrat;
+  padding-block: .5vh;
+}
+
+.head u {
+  margin-right: 2vw;
+}
+
+.nav {
+  position: absolute;
+  top: 5vh;
+  display: flex;
+  height: 10vh;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2vw;
+}
+
+.nav img {
+  height: 7vh;
+  width: 20%;
+  cursor: pointer;
+}
+
+.nav div {
+  display: flex;
+}
+
+.nav span {
+  margin-right: 2vw;
+  cursor: pointer;
+  font-size: 1.2vw;
+  font-family: montserrat;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav span:hover {
+  text-decoration: underline;
+}
+
+.slogan {
+  position: absolute;
+  top: 30vh;
+  padding-inline: 5vw;
+  font-family: 'Lufga', sans-serif;
+}
+
+.slogan h1 {
+  font-size: 4vw;
+  margin-block: 1vh;
+}
+
+.slogan span {
+  font-size: 1.4vw;
+  font-family: montserrat;
+  font-weight: 300;
+}
+
+.slogan button {
+  margin-top: 5vh;
+  background-color: #DF3F44;
+  height: 5vh;
+  width: 15%;
+  color: #fff;
+  font-family: montserrat;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.slogan button:hover {
+  border: 2px solid #DF3F44;
+  color: #DF3F44;
+  background-color: #fff;
+  transition: .5s ease-in-out;
+}
+
+.promises {
+  position: absolute;
+  bottom: 2.5vh;
+  padding-inline: 10vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 4vw;
+}
+
+@media (width <=950px) {
+  .head {
+    font-size: 2vw;
+  }
+
+  .nav span {
+    font-size: 2vw;
+  }
+
+  .slogan button {
+    width: 20vw;
+  }
+
+  .slogan span {
+    font-size: 2vw;
+  }
+
+  .promises {
+    padding-inline: 2vw;
+  }
+}
+
+@media (width <=550px) {
+  .options {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    font-size: 4vw;
+  }
+
+  .nav span {
+    font-size: 3vw;
+  }
+
+  .slogan span {
+    font-size: 3vw;
+  }
+
+  .slogan h1 {
+    font-size: 6vw;
+  }
+
+  .promises {
+    padding-inline: 0;
+    gap: 3vw;
+    margin-left: 1vw;
+  }
+
+}
