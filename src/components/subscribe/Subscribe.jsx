@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './Subscribe.module.css'
 import { FaCheckCircle } from "react-icons/fa";
 import sub from '../../assets/sub.png'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Subscribe = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000, easing: 'ease-in-sine' })
+  }, [])
   return (
-    <section className={styles.subscribe}>
+    <section data-aos="fade-up" className={styles.subscribe}>
       <div className={styles.left}>
         <h1><span style={{ color: '#DF3F44' }}>Subscribe</span> & Save</h1>
         <p>Become a subscriber and and on every order</p>

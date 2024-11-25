@@ -7,7 +7,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Lufga', sans-serif;
-  overflow-x: hidden;
 }
 
 .our-promise {
@@ -56,16 +55,14 @@
 .features h1 {
   font-size: 1.5vw;
   margin-bottom: 2vh;
-  text-align: center;
-  overflow: hidden;
+  text-align: center
 }
 
 .features p {
   font-family: montserrat;
   margin-bottom: 2vh;
   font-size: 1vw;
-  text-align: center;
-  overflow: hidden;
+  text-align: center
 }
 
 .featuresPage {
@@ -97,13 +94,21 @@
 
 @media (width <=550px) {
   .our-promise {
-    font-size: 2vw;
-    width: 22vw;
+    font-size: 3vw;
+    width: 44vw;
 
   }
 
+  .featuresPage {
+    margin-block: 1vh;
+  }
+
+  .features img {
+    height: 30%;
+  }
+
   .our-promise div {
-    width: 8vw;
+    width: 10vw;
   }
 
   .features {
@@ -112,12 +117,10 @@
 
   .features h1 {
     font-size: 3vw;
-    overflow: hidden;
   }
 
   .features p {
     font-size: 2vw;
-    overflow: hidden;
   }
 
 }

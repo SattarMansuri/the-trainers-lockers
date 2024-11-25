@@ -36,10 +36,14 @@
 
 @media (width <=550px) {
   .advertise div {
-    left: 20%;
+    left: 10%;
   }
 
   .advertise h1 {
     font-size: 4vw;
+  }
+
+  .advertise p {
+    font-size: 3vw;
   }
 }

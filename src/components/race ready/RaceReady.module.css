@@ -1,6 +1,6 @@
 .main {
   min-height: 100vh;
-  padding-top: 3vh;
+  padding-top: 1vh;
 }
 
 .sect2 {
@@ -68,16 +68,24 @@
   transition: .5s ease-in-out;
 }
 
+@media (width <=950px) {
+  .sect img {
+    width: 50%;
+  }
+
+  .sect2 img {
+    width: 50%;
+  }
+}
+
 @media (width <=550px) {
   .main {
     margin-top: 5vh;
-    /* height: 150vh; */
     padding: 0;
   }
 
   .sect {
     flex-direction: column-reverse;
-    overflow: hidden;
   }
 
   .sect div {
@@ -90,7 +98,6 @@
 
   .sect2 {
     flex-direction: column;
-    overflow: hidden;
   }
 
   .sect2 div {
@@ -102,19 +109,19 @@
   }
 
   .main h3 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .main h1 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .main p {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 
   .main button {
-    font-size: 2vw;
+    font-size: 2.5vw;
     width: 30%;
   }
 }

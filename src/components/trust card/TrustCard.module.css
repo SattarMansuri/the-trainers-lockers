@@ -4,12 +4,10 @@
   box-shadow: 0px 0px 37.75px 0px #00000012;
   border-radius: 1rem;
   padding: 1vh 1vw;
-  overflow: hidden;
 }
 
 .up {
   height: 50%;
-  overflow: hidden;
 }
 
 .up img {
@@ -47,20 +45,23 @@
 
 @media (width <=550px) {
   .trustCard {
-    width: 50vw;
-    height: 45vh;
-    overflow: hidden;
+    width: 60vw;
+    min-height: 45vh;
   }
 
-  .up {
-    overflow: hidden;
+  .comment {
+    margin-bottom: 1vh;
+  }
+
+  .comment img {
+    height: 7vh;
   }
 
   .comment h2 {
-    font-size: 2vw
+    font-size: 3vw
   }
 
   .comment span {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 }

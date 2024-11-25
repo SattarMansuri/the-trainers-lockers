@@ -1,7 +1,7 @@
 .trust {
   min-height: 80vh;
   padding-inline: 5vw;
-  margin-top: 5vh;
+
 }
 
 .trust h1 {
@@ -21,16 +21,22 @@
 }
 
 @media (width <=550px) {
+  .trust {
+    margin-top: 63vh;
+    margin-bottom: 3vh;
+  }
+
   .trust h1 {
     font-size: 4vw;
   }
 
   .trust p {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .reviews {
     flex-direction: column;
-    margin-left: 20vw;
+    justify-content: center;
+    align-items: center;
   }
 }

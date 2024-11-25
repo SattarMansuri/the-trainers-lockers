@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './Trust.module.css'
 import { REVIEWS } from '../utils'
 import TrustCard from '../trust card/TrustCard'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Trust = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000, easing: 'ease-in-sine' })
+  }, [])
   return (
-    <section id='bundles' className={styles.trust}>
-      <h1>
+    <section data-aos="fade-up" id='bundles' className={styles.trust}>
+      <h1 >
         <span style={{ color: '#DF3F44' }}>Trusted by trainers</span><br />
         across New Zealand and Australia
       </h1>

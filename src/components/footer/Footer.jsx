@@ -18,7 +18,7 @@ const Footer = () => {
             <span>Non-swabbale formula for your peace of mind</span>
           </div>
         </div>
-        <span>Copyright &copy; 2024 The Trainer Locker</span>
+        <span className={styles.copy}>Copyright &copy; 2024 The Trainer Locker</span>
       </div>
 
       <div className={styles.right}>
@@ -37,7 +37,7 @@ const Footer = () => {
             <span><FaLocationDot /> 794 Mcallister St San Francisco, 94102</span>
           </div>
         </div>
-        <span>All Rights Reserved | Terms and Conditions | Privacy Policy</span>
+        <span className={styles.rights}>All Rights Reserved | Terms and Conditions | Privacy Policy</span>
       </div>
     </footer>
   )

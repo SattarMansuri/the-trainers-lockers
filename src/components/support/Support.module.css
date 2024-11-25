@@ -1,5 +1,5 @@
 .support {
-  min-height: 85vh;
+  height: 85vh;
   padding-inline: 5vw;
 }
 
@@ -40,22 +40,31 @@
 
   .right {
     width: 62%;
-    height: 57vh;
   }
 }
 
 @media (width <=550px) {
   .main {
+    min-height: 85vh;
     flex-direction: column;
     justify-content: center;
   }
 
+  .support h1 {
+    font-size: 4vw;
+  }
+
+  .support p {
+    font-size: 3vw;
+  }
+
   .left {
-    margin-left: 20vw;
+    padding-inline: 10vw;
+    margin-bottom: 3vh;
+    width: 100%;
   }
 
   .right {
     width: 100%;
-    overflow: hidden;
   }
 }

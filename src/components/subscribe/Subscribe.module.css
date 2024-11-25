@@ -1,5 +1,5 @@
 .subscribe {
-  min-height: 80vh;
+  min-height: 50vh;
   background-color: #FFF2F1;
   display: flex;
   justify-content: space-between;
@@ -66,9 +66,16 @@
   width: 70%;
 }
 
+@media (width <=950px) {
+  .left div {
+    font-size: 1.5vw;
+  }
+}
+
 @media (width <=550px) {
   .subscribe {
     flex-direction: column-reverse;
+    margin-bottom: 3vh;
   }
 
   .left {

@@ -16,7 +16,6 @@
 .right {
   width: 50%;
   padding: 15vh 10vw;
-  overflow: hidden;
 }
 
 .right h1 {
@@ -81,7 +80,6 @@
 
   .right {
     width: 100%;
-    overflow: hidden;
   }
 
   .left {
@@ -94,16 +92,16 @@
   }
 
   .right p {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .right input {
     height: 20%;
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .right button {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .socialHandles {

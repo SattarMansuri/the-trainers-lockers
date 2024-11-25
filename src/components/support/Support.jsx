@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './Support.module.css'
 import { PRODUCTS_LISTS } from '../utils'
 import ProductsCard from '../products card/ProductsCard'
 import support from '../../assets/support.png'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Support = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  }, [])
   const product = PRODUCTS_LISTS.filter((elem) => elem.productName === 'UN-LOCK+')
   return (
-    <section id='shopByBenefit' className={styles.support}>
+    <section data-aos="fade-up" id='shopByBenefit' className={styles.support}>
       <h1><span style={{ color: '#DF3F44' }}>Support</span> Your Horse, Head to Hoof</h1>
       <p>Click to learn how our products enhance specific areas</p>
       <div className={styles.main}>

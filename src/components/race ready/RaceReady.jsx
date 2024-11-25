@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './RaceReady.module.css'
 import unique from '../../assets/unique.png'
 import natural from '../../assets/natural.png'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const RaceReady = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  })
   return (
     <section className={styles.main}>
-      <div className={styles.sect}>
+      <div data-aos="fade-up" className={styles.sect}>
         <div>
           <h3>Uniquely formulated
             for horse trainers</h3>
@@ -18,7 +23,7 @@ const RaceReady = () => {
         </div>
         <img src={unique} alt="" />
       </div>
-      <div className={styles.sect2}>
+      <div data-aos="fade-up" className={styles.sect2}>
         <img src={natural} alt="" />
         <div>
           <h3>Natural</h3>

@@ -1,6 +1,5 @@
 .main {
-  max-height: 100vh;
-  max-width: 100vw;
+  min-height: 100vh;
   color: #fff;
 }
 
@@ -104,6 +103,7 @@
   bottom: 2.5vh;
   padding-inline: 10vw;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 4vw;
 }
@@ -138,8 +138,17 @@
     font-size: 4vw;
   }
 
+  .nav img {
+    width: 30%;
+  }
+
   .nav span {
     font-size: 3vw;
+  }
+
+  .nav :nth-child(3) span {
+    font-size: 5vw;
+    margin-top: 1vh;
   }
 
   .slogan span {
@@ -152,8 +161,9 @@
 
   .promises {
     padding-inline: 0;
-    gap: 3vw;
-    margin-left: 1vw;
+    margin-inline: 1vw;
+    position: relative;
+    margin-top: 3vh;
   }
 
 }

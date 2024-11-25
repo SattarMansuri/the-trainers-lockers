@@ -3,10 +3,9 @@
   background-image: url('../../assets/drug.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  margin-block: 5vh;
+  margin-bottom: 5vh;
   padding: 20vh 5vw;
   color: #fff;
-  overflow: hidden;
 }
 
 .performance h1 {

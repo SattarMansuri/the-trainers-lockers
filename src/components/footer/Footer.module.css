@@ -16,6 +16,11 @@
   width: 40%;
 }
 
+.copy {
+  display: block;
+  margin-top: 4.3vh;
+}
+
 .left img {
   width: 70%;
 }
@@ -69,11 +74,24 @@
 
 @media (width <=550px) {
   .main {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    padding-inline: 2vw;
+    position: relative;
   }
 
   .left {
     width: 100%;
+    margin-top: 0;
+  }
+
+  .left img {
+    width: 50%;
+  }
+
+  .right {
+    width: 100%;
+    margin-top: 0;
+
   }
 
   .main span {
@@ -86,5 +104,19 @@
 
   .contacts {
     margin-left: 5vw;
+    margin-top: 0;
+    margin-bottom: 2vh;
+    padding-inline: 0;
+    justify-content: space-between;
+  }
+
+  .rights {
+    display: block;
+    margin-bottom: 3vh;
+  }
+
+  .copy {
+    position: absolute;
+    bottom: 3%;
   }
 }
